@@ -17,3 +17,16 @@ print("Matrix_sum shape:",matrix_sum.shape)
 print("Matrix_sum dimesnion:",matrix_sum.ndim)
 
 print("Matrix1 itemsize:",matrix1.itemsize)
+
+a =np.arange(5)
+
+print("Array a:",a)
+
+matrix_product = np.dot(matrix1,matrix2)
+print("Matrix product:",matrix_product)
+
+#reshaing 
+array=np.array([1,2,3,4,5,6])
+
+reshaped_array=array.reshape(3,2)
+print("Reshaped array:",reshaped_array)
