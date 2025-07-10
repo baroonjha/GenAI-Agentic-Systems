@@ -28,3 +28,23 @@ This repository documents my 4-month journey to become a Generative AI and Agent
 ## Progress
 - **Week 1 (July 2–8, 2025)**: Python setup, NumPy, pandas, API basics.
 - **Started**: July 2, 2025.
+
+# GenAI-Agentic-Systems
+My 4-month roadmap to become a production-level AI agentic and GenAI engineer.
+
+## Structure
+- `/numpy`: NumPy scripts (e.g., `numpy_basics.py` for matrix operations, Day 2).
+- `/pandas`: pandas scripts (e.g., `pandas_basics.py` for DataFrame operations, Day 3).
+- `/api`: API scripts (e.g., `api_basics.py` for fetching data, Day 4).
+- `/mini-projects`: Mini-projects (e.g., `text_preprocessor.py`, `processed_texts.csv` for NLP preprocessing with stopword removal, Day 5).
+- `/assignments`: Assignments (e.g., `word_frequency.py`, `word_frequencies.csv` for word frequency analysis, Day 6).
+- `/scripts`: Other Python scripts for daily tasks.
+- `/main-project`: Multi-agent customer support system (to be developed).
+
+## Week 1 Progress (July 2–11, 2025)
+- Day 1: Set up Python environment (`genai` conda env).
+- Day 2: Learned NumPy basics, created `numpy_basics.py`.
+- Day 3: Learned pandas basics, created `pandas_basics.py`.
+- Day 4: Learned API calls, created `api_basics.py`.
+- Day 5: Built text preprocessing mini-project, created `text_preprocessor.py` and `processed_texts.csv` with stopword removal.
+- Day 6: Built word frequency assignment, created `word_frequency.py` and `word_frequencies.csv`.
