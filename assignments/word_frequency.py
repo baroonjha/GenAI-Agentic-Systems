@@ -42,3 +42,8 @@ df.to_csv('assignments/word_frequencies.csv',index=False)
 #print result
 
 print("Final result :\n",df)
+
+## after sorting frequency > 1
+new_df = df[df['frequency']>1]
+
+print("data Frame whose frequency > 1 :\n",new_df)
