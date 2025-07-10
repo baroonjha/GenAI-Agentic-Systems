@@ -1,4 +1,4 @@
-original_text,processed_tokens
-"Hello, World! This is a sample text.","['hello', 'world', 'this', 'is', 'a', 'sample', 'text']"
-AI is transforming the world!!!,"['ai', 'is', 'transforming', 'the', 'world']"
-Python is great for NLP... Let's learn!,"['python', 'is', 'great', 'for', 'nlp', 'lets', 'learn']"
+original_text,processed_tokens,word_count
+"Hello, World! This is a sample text.","['hello', 'world', 'this', 'is', 'a', 'sample', 'text']",7
+AI is transforming the world!!!,"['ai', 'is', 'transforming', 'the', 'world']",5
+Python is great for NLP... Let's learn!,"['python', 'is', 'great', 'for', 'nlp', 'lets', 'learn']",7

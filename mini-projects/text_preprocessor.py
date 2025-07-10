@@ -1,7 +1,9 @@
 import pandas as pd
 import nltk
 nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 import string
 
 # Ensure 'punkt' is downloaded before tokenization
@@ -58,17 +60,47 @@ def preprocess_text(text):
 #applying processing
 processed_texts = [preprocess_text(text) for text in texts]
 
+# below is the breakdown of above shortcut
+# for text in texts:
+#     processed=processed_texts(text)
+#     processed_texts.append(processed)
+
+
+
 print("processed_texts:",processed_texts)
 
 #createdata frame
 df = pd.DataFrame({
     'original_text':texts,
-    'processed_tokens':processed_texts
+    'processed_tokens':processed_texts,
+    
 })
 
-print("DataFrame is :\n",df)
+# print("DataFrame is :\n",df)
+
+#added one column in df
+df['word_count']=df['processed_tokens'].apply(len)
 
 
 df.to_csv('mini-projects/processed_texts.csv',index=False)
 
-print("Processed DataFrame:\n",df)
+# print("Processed DataFrame:\n",df)
+
+## stopwords the,is,and,are etc 
+
+def preprocess1_text(text):
+    text =text.lower()
+    text=text.translate(str.maketrans("","",string.punctuation))
+    tokens = word_tokenize(text)
+    print("tokens with stopwords:",tokens)
+
+    #remove stopwords
+
+    stop_words = set(stopwords.words('english'))
+
+    tokens = [token for token in tokens if token not in stop_words]
+    return tokens
+
+print("Stopwords removal  :",[preprocess1_text(text) for text in texts ])
+
+
