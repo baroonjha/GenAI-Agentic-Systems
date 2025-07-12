@@ -1,6 +1,7 @@
 import pandas as pd
 import nltk
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from nltk import FreqDist
 import string
 
@@ -15,6 +16,8 @@ def preprocess_text(text):
     text=text.lower()
     text=text.translate(str.maketrans("","",string.punctuation))
     tokens = word_tokenize(text)
+    stop_words =set(stopwords.words('english'))
+    tokens = [token for token in tokens if token not in stop_words]
 
     return tokens
 
